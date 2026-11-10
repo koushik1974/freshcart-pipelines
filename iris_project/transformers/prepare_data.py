@@ -14,7 +14,7 @@ except ImportError:
 def prepare_data(df, *args, **kwargs):
     df = df.dropna()
     train, test_df = train_test_split(
-        df, test_size=0.2, random_state=42
+        df, test_size=0.3, random_state=42
     )
     train = train.copy()
     test_df = test_df.copy()
